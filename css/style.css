@@ -1,0 +1,148 @@
+
+header, footer {
+	position         : fixed;
+	z-index          : 1;
+
+	width            : 100%;
+	padding          : 15px 0;
+
+	background-color : rgba(0, 0, 0, .7);;
+}
+
+.carousel {
+	width : 100%;
+}
+
+header img {
+	/*width: 175px;
+	height: 43px;*/
+	float  : left;
+	margin : 0 50px;
+}
+
+header .titles {
+	float  : left;
+
+	height : auto;
+	width  : 300px;
+}
+
+header h1, header h2{
+	padding        : 0 20px;
+
+	font-family    : Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+	font-weight    : bold;
+	/*font-family: 'Open Sans Bold', sans serif;*/
+	color          : #ccc;
+	text-transform : uppercase;
+}
+
+header h1 {
+	width       : 280px;
+	margin      : 10px auto 5px;
+
+	font-size   : 20px;
+	line-height : 25px;
+}
+
+header h2 {
+	width       : 180px;
+	margin      : 5px auto 10px;
+
+	font-size   : 14px;
+	line-height : 18px;
+}
+
+header h1 {
+	font-size   : 16px;
+	line-height : 16px;
+}
+
+header h2 a {
+	font-size   : 14px;
+	line-height : 14px;
+}
+
+header h2 a:hover {
+	color : #ccc;
+}
+
+footer {
+	bottom : 0;
+}
+
+footer .mail, footer .tel {
+	margin : 0 auto;
+}
+
+footer .tel {
+	cursor: pointer;
+}
+
+.two-columns .column {
+	float      : left;
+
+	width      : 50%;
+
+	text-align : center;
+}
+
+.three-columns .column {
+	float      : left;
+
+	width      : 33.3%;
+
+	text-align : center;
+}
+
+.carousel-indicators {
+	bottom : 60px;
+}
+
+.item.portrait {
+	background-position : 50% 25% !important;
+}
+
+.item.portrait.active {
+	left                : 0;
+
+	background-position : 50% 75% !important;
+
+	-webkit-transition  : background-position 4s;
+	transition          : background-position 4s;
+}
+
+.pt15 {
+	padding-top: 15px;
+}
+
+.b85 {
+	bottom: 85px;
+}
+
+@media screen and (max-width: 839px) {
+	.two-columns .column,.three-columns .column {
+		float         : left;
+		clear         : both;
+
+		width         : 100%;
+		margin-bottom : 15px;
+	}
+	.carousel-indicators {
+		bottom : 160px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	header img {
+		float  : none;
+		margin : 10px auto;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	
+	.carousel-indicators {
+		bottom : 140px;
+	}
+}
